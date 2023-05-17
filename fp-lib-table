@@ -1,0 +1,6 @@
+(fp_lib_table
+  (lib (name bath_clamp_v1)(type KiCad)(uri "$(KIPRJMOD)/bath_clamp_v1.pretty")(options "")(descr "")(disabled))
+  (lib (name digikey-footprints)(type KiCad)(uri ${MYLIBRARY}/digikey-kicad-library/digikey-footprints.pretty)(options "")(descr ""))
+  (lib (name covg-kicad)(type KiCad)(uri ${MYLIBRARY}/covg-kicad-lib/covg-kicad.pretty)(options "")(descr ""))
+  (lib (name kicad-agg)(type KiCad)(uri ${MYLIBRARY}/agg-kicad/agg.pretty)(options "")(descr ""))
+)
