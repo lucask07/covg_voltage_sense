@@ -44,7 +44,7 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "45_degree_only": true,
+          "45_degree_only": false,
           "min_clearance": 0.254
         }
       },
@@ -69,7 +69,7 @@
         "diff_pair_uncoupled_length_too_long": "error",
         "drill_out_of_range": "error",
         "duplicate_footprints": "warning",
-        "extra_footprint": "warning",
+        "extra_footprint": "error",
         "footprint_type_mismatch": "error",
         "hole_clearance": "error",
         "hole_near_hole": "error",
@@ -91,12 +91,12 @@
         "skew_out_of_range": "error",
         "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
-        "track_dangling": "warning",
+        "track_dangling": "error",
         "track_width": "error",
         "tracks_crossing": "error",
         "unconnected_items": "error",
         "unresolved_variable": "error",
-        "via_dangling": "warning",
+        "via_dangling": "error",
         "zone_has_empty_net": "error",
         "zones_intersect": "error"
       },
@@ -106,7 +106,7 @@
         "allow_blind_buried_vias": false,
         "allow_microvias": false,
         "max_error": 0.005,
-        "min_clearance": 0.0,
+        "min_clearance": 0.127,
         "min_copper_edge_clearance": 0.049999999999999996,
         "min_hole_clearance": 0.25,
         "min_hole_to_hole": 0.25,
@@ -114,7 +114,7 @@
         "min_microvia_drill": 0.09999999999999999,
         "min_silk_clearance": 0.0,
         "min_through_hole_diameter": 0.19999999999999998,
-        "min_track_width": 0.09999999999999999,
+        "min_track_width": 0.127,
         "min_via_annular_width": 0.049999999999999996,
         "min_via_diameter": 0.5,
         "use_height_for_length_calcs": true
@@ -122,11 +122,7 @@
       "track_widths": [
         0.0,
         0.1524,
-        0.2,
-        0.25,
-        0.4,
-        0.6,
-        1.0
+        0.254
       ],
       "via_dimensions": [
         {
@@ -145,7 +141,149 @@
       "zones_allow_external_fillets": false,
       "zones_use_no_outline": true
     },
-    "layer_presets": []
+    "layer_presets": [
+      {
+        "activeLayer": -2,
+        "layers": [
+          31,
+          36,
+          44,
+          46
+        ],
+        "name": "Bottom View",
+        "renderLayers": [
+          125,
+          126,
+          127,
+          128,
+          129,
+          130,
+          133,
+          134,
+          135,
+          136,
+          137,
+          138,
+          139,
+          140,
+          141,
+          142,
+          143,
+          144,
+          145,
+          146,
+          147,
+          148,
+          149,
+          150,
+          151,
+          152,
+          153,
+          154,
+          155,
+          157,
+          158,
+          159,
+          160,
+          161
+        ]
+      },
+      {
+        "activeLayer": -2,
+        "layers": [
+          0,
+          37,
+          44,
+          47
+        ],
+        "name": "Front View",
+        "renderLayers": [
+          125,
+          126,
+          127,
+          128,
+          129,
+          130,
+          133,
+          134,
+          135,
+          136,
+          137,
+          138,
+          139,
+          140,
+          141,
+          142,
+          143,
+          144,
+          145,
+          146,
+          147,
+          148,
+          149,
+          150,
+          151,
+          152,
+          153,
+          154,
+          155,
+          157,
+          158,
+          159,
+          160,
+          161
+        ]
+      },
+      {
+        "activeLayer": -2,
+        "layers": [
+          0,
+          31,
+          36,
+          37,
+          44,
+          46,
+          47
+        ],
+        "name": "Front/Bottom View",
+        "renderLayers": [
+          125,
+          126,
+          127,
+          128,
+          129,
+          130,
+          133,
+          134,
+          135,
+          136,
+          137,
+          138,
+          139,
+          140,
+          141,
+          142,
+          143,
+          144,
+          145,
+          146,
+          147,
+          148,
+          149,
+          150,
+          151,
+          152,
+          153,
+          154,
+          155,
+          157,
+          158,
+          159,
+          160,
+          161
+        ]
+      }
+    ]
   },
   "boards": [],
   "cvpcb": {
@@ -396,6 +534,7 @@
         "nets": [
           "+15V",
           "+3V3",
+          "+4V",
           "+5V",
           "-15V",
           "GND"
@@ -488,6 +627,14 @@
     [
       "8f6452a4-f576-403e-b12d-634ebe6e21d1",
       "vsense"
+    ],
+    [
+      "a6180dbf-1cdb-4afe-9ab2-c5dc9d1605c2",
+      "gain_adjust_1"
+    ],
+    [
+      "e12aa14d-a6ee-4b49-803e-d2e26197ab6f",
+      "gain_adjust_2"
     ]
   ],
   "text_variables": {}
