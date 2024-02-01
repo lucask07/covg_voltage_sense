@@ -1,0 +1,26 @@
+%TF.GenerationSoftware,KiCad,Pcbnew,(6.0.11)*%
+%TF.CreationDate,2024-01-26T14:49:33-06:00*%
+%TF.ProjectId,voltage_sense,766f6c74-6167-4655-9f73-656e73652e6b,rev?*%
+%TF.SameCoordinates,Original*%
+%TF.FileFunction,Profile,NP*%
+%FSLAX46Y46*%
+G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+G04 Created by KiCad (PCBNEW (6.0.11)) date 2024-01-26 14:49:33*
+%MOMM*%
+%LPD*%
+G01*
+G04 APERTURE LIST*
+%TA.AperFunction,Profile*%
+%ADD10C,0.100000*%
+%TD*%
+G04 APERTURE END LIST*
+D10*
+X48254000Y34317500D02*
+X48254000Y317500D01*
+X254000Y34317500D02*
+X254000Y317500D01*
+X254000Y317500D02*
+X48254000Y317500D01*
+X254000Y34317500D02*
+X48254000Y34317500D01*
+M02*
