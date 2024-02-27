@@ -674,7 +674,7 @@
       <footprint>Connector_Coaxial:BNC_Amphenol_B6252HB-NPP3G-50_Horizontal</footprint>
       <datasheet> ~</datasheet>
       <fields>
-        <field name="Manf#">C2874827</field>
+        <field name="Manf#"></field>
       </fields>
       <libsource lib="Connector" part="Conn_Coaxial" description="coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"/>
       <property name="Manf#" value="C2874827"/>

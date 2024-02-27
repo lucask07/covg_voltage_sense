@@ -1897,7 +1897,7 @@
       (reference "J4") (unit 1) (value "HDMI_A") (footprint "covg-kicad:CONN_10029449-111RLF_HDMI_A")
     )
     (path "/8f6452a4-f576-403e-b12d-634ebe6e21d1/9cb58f46-f724-447a-977f-c25c4fa3c7c4"
-      (reference "J5") (unit 1) (value "Conn_Coaxial") (footprint "Connector_Coaxial:BNC_Amphenol_B6252HB-NPP3G-50_Horizontal")
+      (reference "J5") (unit 1) (value "DNI") (footprint "Connector_Coaxial:BNC_Amphenol_B6252HB-NPP3G-50_Horizontal")
     )
     (path "/8f6452a4-f576-403e-b12d-634ebe6e21d1/3259f80d-9863-4549-b902-9b908fd99360"
       (reference "R1") (unit 1) (value "3k") (footprint "Resistor_SMD:R_0603_1608Metric")
