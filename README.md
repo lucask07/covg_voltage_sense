@@ -4,25 +4,38 @@ This board is physically small so it can be housed in an enclosure on a microman
 
 The input amplifier must have low capacitance to minimize the total filter from the capacitance and the microelectrode resistance. The first version has a fixed amplifier gain. 
 
-![Alt text](docs/voltage_sense_3d.png)
+The **Rev_b board** modifications were designed and implemented by undergraduate student Jordan Haag. The board incorporates programmable gain and uses a low-noise voltage reference, REF3440, as the reference input to the offset adjust DAC. The low-noise reference improves the noise performance of the system. 
+
+![Alt text](docs/voltage_sense_3d_top.png)
+![Alt text](docs/voltage_sense_3d_bottom.png)
 
 ## Schematic
 The [schematic](docs/voltage_sense.pdf) is in the DOCS folder.
 
 ## Fabrication
-The first revision of the board was fabricated and assembled by 
-JLCPCB. 
+The second revision of this board was fabricated and assembled by JLCPCB. 
 
-Order #: Y10-3276043A on 2023/05/30
+Order #: Y13-3276043A 
+
+Assembly: SMT02402281623205-3276043A
+
+Date: 2024/02/29
+
+## Bill of Materials
+
+The BOM is here ![JLCPCB assembly BOM](jlcpcb/production_files/BOM-voltage_sense.csv) 
+
+Certain parts are not directly available from LCSC and so were pre-ordered. Pre-order: 24AA025UID, OPA1641,
+DAC101C081CIMK/NOPB, TMUX6111PWR, TCA9555DBR, LP2981A-33DBVT, ADA4000-2ARZ-R7. Global sourcing: 3269W-1-103GLF, REF3440TIDBVR.
+
+## Bugs and Future Improvement
+
+* A footprint for a capacitor should be included in parallel with the feedback gain resistors, for example R33, R34, R35, and R36. This limits the amplifier bandwidth. Currently we work around this omission by stacking a capacitor on top of the resistor. 
+
+* U8,U10 (TMUX6111) and U11 (REF3440) were not assembled by JLCPCB and were lated added by hand.
 
 
-## Bugs 
-* BOM: R14 and R18 were specified as 5.1 MOhm should be 33 Ohm.
-* C8 of 0.1 uF made the op-amp unstable. Must remove. 
-* Connections of the negative capacitance circuit were incorrect. 
-
-
-## HDMI: connection from DAQ to daughtercard 
+### HDMI: connection from DAQ to daughtercard 
 
 The digital COVG project uses the concept of one main data acquisition board connected to an FPGA. The main data acquisition board has multiple channels that extend to daughtercards. The connection to each daughtercard allows for low-latency control by connections to high-speed ADCs and DACs on the daq board. For COVG the daughtercards are the bath clamp; the guard clamp; the voltage clamp and I force; and the V1/V2. The connectivity to the daughtercard is generalized and will be the same for each. 
 
@@ -68,10 +81,9 @@ An HDMI-A cable is used for input and output signals that connect the bath clamp
 | 19  | HPD          | Analog/GPIO3 | AMP_OUT    | output to ADS8686 1 MSPS, programmable PGA                        |
 
 
-## Electrode Configurations and Modes 
 
-### Electrodes
+### Acknowledgments
 
 
-Research reported in this publication was supported by the National Institute Of Neurological Disorders And Stroke of the National Institutes of Health under Award Number R15NS116907. The content is solely the responsibility of the authors and does not necessarily represent the official views of the National Institutes of Health.
+Research reported in this repository was supported by the National Institute Of Neurological Disorders And Stroke of the National Institutes of Health under Award Number R15NS116907. The content is solely the responsibility of the authors and does not necessarily represent the official views of the National Institutes of Health.
 
