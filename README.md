@@ -1,11 +1,32 @@
-# COVG Clamp Board 
+# COVG Voltage Sense Board
+
+This board is physically small so it can be housed in an enclosure on a micromanipulator. The board input is a BNC connector which is compatible with glass microelectrode holders. 
+
+The input amplifier must have low capacitance to minimize the total filter from the capacitance and the microelectrode resistance. The first version has a fixed amplifier gain. 
+
+![Alt text](docs/voltage_sense_3d.png)
+
+## Schematic
+The [schematic](docs/voltage_sense.pdf) is in the DOCS folder.
+
+## Fabrication
+The first revision of the board was fabricated and assembled by 
+JLCPCB. 
+
+Order #: Y10-3276043A on 2023/05/30
+
+
+## Bugs 
+* BOM: R14 and R18 were specified as 5.1 MOhm should be 33 Ohm.
+* C8 of 0.1 uF made the op-amp unstable. Must remove. 
+* Connections of the negative capacitance circuit were incorrect. 
 
 
 ## HDMI: connection from DAQ to daughtercard 
 
-The digital COVG project uses the concept of one main data acquition board connected to an FPGA. The main data acquisition board has multiple channels that extend to daughtercards. The connection to each daughtercard allows for low-latency control by connections to high-speed ADCs and DACs on the daq board. For COVG the daughtercards are the bath clamp; the guard clamp; the voltage clamp and I force; and the V1/V2. The connectivity to the daughtercard is generalized and will be the same for each. 
+The digital COVG project uses the concept of one main data acquisition board connected to an FPGA. The main data acquisition board has multiple channels that extend to daughtercards. The connection to each daughtercard allows for low-latency control by connections to high-speed ADCs and DACs on the daq board. For COVG the daughtercards are the bath clamp; the guard clamp; the voltage clamp and I force; and the V1/V2. The connectivity to the daughtercard is generalized and will be the same for each. 
 
-An HDMI-A cable is used for input and output signals that connects the bath clamp daughtercard to the DAQ board. The HDMI cable carries:
+An HDMI-A cable is used for input and output signals that connect the bath clamp daughtercard to the DAQ board. The HDMI cable carries:
 
 - **power**: +5V, +15V, -15V
 - **GND** 
