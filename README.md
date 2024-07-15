@@ -36,6 +36,16 @@ DAC101C081CIMK/NOPB, TMUX6111PWR, TCA9555DBR, LP2981A-33DBVT, ADA4000-2ARZ-R7. G
 
 * U8,U10 (TMUX6111) and U11 (REF3440) were not assembled by JLCPCB and were lated added by hand.
 
+## Upgrades 
+
+This version addresses the following issues that occured with V1 
+
+* DAC reference noise: https://github.com/lucask07/covg_voltage_sense/issues/5
+* Negative capacitance connection: https://github.com/lucask07/covg_voltage_sense/issues/3
+* C8 causes oscillation: https://github.com/lucask07/covg_voltage_sense/issues/2
+* Incorrect BOM resistor values: https://github.com/lucask07/covg_voltage_sense/issues/1
+
+## Miscellaneous
 
 ### HDMI: connection from DAQ to daughtercard 
 
