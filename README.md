@@ -30,7 +30,9 @@ DAC101C081CIMK/NOPB, TMUX6111PWR, TCA9555DBR, LP2981A-33DBVT, ADA4000-2ARZ-R7. G
 
 ## Bugs and Future Improvement
 
-* A footprint for a capacitor should be included in parallel with the feedback gain resistors, for example R33, R34, R35, and R36. This limits the amplifier bandwidth. Currently we work around this omission by stacking a capacitor on top of the resistor. 
+* A footprint for a capacitor should be included in parallel with the feedback gain resistors, for example R33, R34, R35, and R36. This limits the amplifier bandwidth. Currently we work around this omission by stacking a capacitor on top of the resistor. Issue ([#4][i4])
+
+[i4]: https://github.com/lucask07/covg_voltage_sense/issues/4
 
 * U8,U10 (TMUX6111) and U11 (REF3440) were not assembled by JLCPCB and were lated added by hand.
 
